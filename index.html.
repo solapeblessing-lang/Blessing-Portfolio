@@ -89,7 +89,7 @@ export default function LegalPortfolio() {
               <div className="w-80 h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                 Professional Photo
                 <br />
-                <span className="text-sm">(Upload your headshot here)</span>
+                <span className="text-sm"><img src = "professional-headshot.jpg"/></span>
               </div>
             </div>
           </div>
