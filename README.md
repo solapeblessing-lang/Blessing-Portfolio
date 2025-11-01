@@ -54,7 +54,7 @@
         </div>
         <div class="flex justify-center">
           <div class="w-80 h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-            <img src="images/profile.jpg" alt="Blessing Solape Agbede" class="w-full h-full object-cover rounded-lg">
+            <img src="professional-headshot.jpg" alt="Blessing Solape Agbede" class="w-full h-full object-cover rounded-lg">
           </div>
         </div>
       </div>
