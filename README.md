@@ -175,7 +175,7 @@
           <div class="border border-gray-200 rounded-lg p-4">
             <div class="font-medium text-gray-900 mb-2">DocuSign Workflow</div>
             <div class="text-sm text-gray-600 mb-3">Document execution and tracking</div>
-            <img src="images/docusign-screenshot.jpg" alt="DocuSign Workflow" class="w-full h-32 object-cover rounded">
+            <img src="images/Docusign work.png" alt="DocuSign Workflow" class="w-full h-32 object-cover rounded">
           </div>
           <div class="border border-gray-200 rounded-lg p-4">
             <div class="font-medium text-gray-900 mb-2">Client Onboarding</div>
