@@ -1,1 +1,351 @@
 # Blessing-Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessing Solape Agbede - Legal Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .sample-card { transition: all 0.3s; }
+    .sample-card:hover { border-color: #2563eb; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-900">Blessing Agbede</div>
+      <nav class="flex gap-6">
+        <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+        <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
+        <a href="#work" class="text-gray-600 hover:text-gray-900">Work Samples</a>
+        <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            Available for Remote Work
+          </div>
+          <h1 class="text-5xl font-bold text-gray-900 mb-4">Legal Assistant</h1>
+          <p class="text-xl text-gray-600 mb-6">
+            Licensed attorney with 3+ years of experience in legal assistance for law firms. Proficient in 9+ legal technology platforms.
+          </p>
+          <div class="flex gap-4">
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+              Get In Touch
+            </a>
+            <a href="#" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Resume
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-80 h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+            <img src="images/profile.jpg" alt="Blessing Solape Agbede" class="w-full h-full object-cover rounded-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="bg-blue-600 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold mb-2">3+</div>
+          <div class="text-blue-100">Years Experience</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">120+</div>
+          <div class="text-blue-100">Cases Managed</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">9+</div>
+          <div class="text-blue-100">Legal Platforms</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mb-2">98%</div>
+          <div class="text-blue-100">Accuracy Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <p class="text-gray-600 mb-4">
+            Licensed attorney specializing in virtual legal assistance for US and UK law firms. I bring comprehensive legal knowledge combined with expertise in legal technology platforms.
+          </p>
+          <p class="text-gray-600 mb-4">
+            My background spans multiple practice areas including immigration, personal injury, family law, estate planning, and employment law. I have hands-on experience with case management systems, legal research databases, and document automation tools.
+          </p>
+          <p class="text-gray-600">
+            I excel at managing complex case files, conducting legal research, drafting documents, and maintaining seamless communication with clients across time zones.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Certifications</h3>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span class="text-gray-700">Legal Administrative Assistant</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span class="text-gray-700">Executive Virtual Assistant</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span class="text-gray-700">GDPR Compliance</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span class="text-gray-700">CAMS Fundamentals</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span class="text-gray-700">FinTech Specialization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Technical Proficiency</h2>
+      <p class="text-gray-600 mb-8">Legal technology platforms I use daily</p>
+      
+      <div class="grid md:grid-cols-5 gap-4 mb-12">
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Clio</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">MyCase</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Practice Panther</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">HotDocs</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Relativity</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">LexisNexus</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Westlaw</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">DocuSign</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Notion</div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors">Trello</div>
+      </div>
+
+      <div class="bg-white rounded-lg border border-gray-200 p-8">
+        <h3 class="text-xl font-bold text-gray-900 mb-6">Software Experience Evidence</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-medium text-gray-900 mb-2">Clio Dashboard</div>
+            <div class="text-sm text-gray-600 mb-3">Case management, billing, calendar sync</div>
+            <img src="images/clio-screenshot.jpg" alt="Clio Dashboard" class="w-full h-32 object-cover rounded">
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-medium text-gray-900 mb-2">DocuSign Workflow</div>
+            <div class="text-sm text-gray-600 mb-3">Document execution and tracking</div>
+            <img src="images/docusign-screenshot.jpg" alt="DocuSign Workflow" class="w-full h-32 object-cover rounded">
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <div class="font-medium text-gray-900 mb-2">Client Onboarding</div>
+            <div class="text-sm text-gray-600 mb-3">Intake forms and documentation</div>
+            <img src="images/intake-screenshot.jpg" alt="Client Intake System" class="w-full h-32 object-cover rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Practice Areas</h2>
+      <div class="grid md:grid-cols-5 gap-6">
+        <div class="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3 text-blue-600" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <div class="font-medium text-gray-900">Immigration Law</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3 text-blue-600" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <div class="font-medium text-gray-900">Personal Injury</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3 text-blue-600" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <div class="font-medium text-gray-900">Family Law</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3 text-blue-600" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <div class="font-medium text-gray-900">Estate Planning</div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3 text-blue-600" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 1v6m0 6v6"></path>
+            <path d="m4.2 4.2 4.3 4.3m5 5 4.3 4.3m-4.3-13.6 4.3-4.3M7.5 16.5l-4.3 4.3"></path>
+          </svg>
+          <div class="font-medium text-gray-900">Employment Law</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Samples -->
+  <section id="work" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Work Samples</h2>
+      <p class="text-gray-600 mb-8">Redacted examples of legal documents and templates</p>
+
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button onclick="filterSamples('all')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-blue-600 text-white">All Areas</button>
+        <button onclick="filterSamples('immigration')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-white text-gray-700 border border-gray-300">Immigration Law</button>
+        <button onclick="filterSamples('personal-injury')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-white text-gray-700 border border-gray-300">Personal Injury</button>
+        <button onclick="filterSamples('family')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-white text-gray-700 border border-gray-300">Family Law</button>
+        <button onclick="filterSamples('estate')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-white text-gray-700 border border-gray-300">Estate Planning</button>
+        <button onclick="filterSamples('employment')" class="filter-btn px-4 py-2 rounded-lg font-medium bg-white text-gray-700 border border-gray-300">Employment Law</button>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="estate">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Power of Attorney</h3>
+          <p class="text-sm text-gray-600 mb-4">Document Draft</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            View Sample
+          </button>
+        </div>
+
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="immigration">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Immigration Petition</h3>
+          <p class="text-sm text-gray-600 mb-4">Legal Brief</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            View Sample
+          </button>
+        </div>
+
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="personal-injury">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Personal Injury Demand Letter</h3>
+          <p class="text-sm text-gray-600 mb-4">Correspondence</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            View Sample
+          </button>
+        </div>
+
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="family">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Divorce Settlement Agreement</h3>
+          <p class="text-sm text-gray-600 mb-4">Contract</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            View Sample
+          </button>
+        </div>
+
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="employment">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Employment Contract Review</h3>
+          <p class="text-sm text-gray-600 mb-4">Analysis</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            View Sample
+          </button>
+        </div>
+
+        <div class="sample-card bg-white border border-gray-200 rounded-lg p-6" data-area="estate">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-600 mb-4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <h3 class="font-bold text-gray-900 mb-2">Will Preparation</h3>
+          <p class="text-sm text-gray-600 mb-4">Document Draft</p>
+          <button class="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12
