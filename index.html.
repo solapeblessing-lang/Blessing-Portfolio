@@ -1,1 +1,346 @@
+import React, { useState } from 'react';
+import { FileText, Download, Mail, Briefcase, Scale, Users, Home, Gavel, Award, CheckCircle } from 'lucide-react';
 
+export default function LegalPortfolio() {
+  const [activeFilter, setActiveFilter] = useState('all');
+
+  const practiceAreas = [
+    { id: 'immigration', name: 'Immigration Law', icon: Users },
+    { id: 'personal-injury', name: 'Personal Injury', icon: Briefcase },
+    { id: 'family', name: 'Family Law', icon: Home },
+    { id: 'estate', name: 'Estate Planning', icon: Scale },
+    { id: 'employment', name: 'Employment Law', icon: Gavel }
+  ];
+
+  const skills = [
+    'Clio', 'MyCase', 'Practice Panther', 'HotDocs', 'Relativity',
+    'LexisNexus', 'Westlaw', 'DocuSign', 'Notion', 'Trello'
+  ];
+
+  const certifications = [
+    'Legal Administrative Assistant',
+    'Executive Virtual Assistant',
+    'GDPR Compliance',
+    'CAMS Fundamentals',
+    'FinTech Specialization'
+  ];
+
+  const workSamples = [
+    { id: 1, title: 'Power of Attorney', area: 'estate', type: 'Document Draft' },
+    { id: 2, title: 'Immigration Petition', area: 'immigration', type: 'Legal Brief' },
+    { id: 3, title: 'Personal Injury Demand Letter', area: 'personal-injury', type: 'Correspondence' },
+    { id: 4, title: 'Divorce Settlement Agreement', area: 'family', type: 'Contract' },
+    { id: 5, title: 'Employment Contract Review', area: 'employment', type: 'Analysis' },
+    { id: 6, title: 'Will Preparation', area: 'estate', type: 'Document Draft' },
+    { id: 7, title: 'Client Intake Form', area: 'immigration', type: 'Template' },
+    { id: 8, title: 'Discovery Response', area: 'personal-injury', type: 'Court Filing' }
+  ];
+
+  const filteredSamples = activeFilter === 'all' 
+    ? workSamples 
+    : workSamples.filter(sample => sample.area === activeFilter);
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-gray-900">Blessing Agbede</div>
+          <nav className="flex gap-6">
+            <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
+            <a href="#skills" className="text-gray-600 hover:text-gray-900">Skills</a>
+            <a href="#work" className="text-gray-600 hover:text-gray-900">Work Samples</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-block bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                Available for Remote Work
+              </div>
+              <h1 className="text-5xl font-bold text-gray-900 mb-4">
+                Legal Assistant
+              </h1>
+              <p className="text-xl text-gray-600 mb-6">
+                Licensed attorney with 3+ years of experience in legal assistance for law firms. Proficient in 9+ legal technology platforms.
+              </p>
+              <div className="flex gap-4">
+                <a 
+                  href="#contact" 
+                  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
+                >
+                  Get In Touch
+                </a>
+                <a 
+                  href="#" 
+                  className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 flex items-center gap-2"
+                >
+                  <Download size={20} />
+                  Resume
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-80 h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                Professional Photo
+                <br />
+                <span className="text-sm">(Upload your headshot here)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Stats */}
+      <section className="bg-blue-600 text-white py-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">3+</div>
+              <div className="text-blue-100">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">120+</div>
+              <div className="text-blue-100">Cases Managed</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">9+</div>
+              <div className="text-blue-100">Legal Platforms</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">98%</div>
+              <div className="text-blue-100">Accuracy Rate</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <p className="text-gray-600 mb-4">
+                Licensed attorney specializing in legal assistance for law firms. I bring comprehensive legal knowledge combined with expertise in legal technology platforms.
+              </p>
+              <p className="text-gray-600 mb-4">
+                My background spans multiple practice areas including immigration, personal injury, family law, estate planning, and employment law. I have hands-on experience with case management systems, legal research databases, and document automation tools.
+              </p>
+              <p className="text-gray-600">
+                I excel at managing complex case files, conducting legal research, drafting documents, and maintaining seamless communication with clients across time zones.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Certifications</h3>
+              <div className="space-y-3">
+                {certifications.map((cert, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="text-blue-600 mt-1" size={20} />
+                    <span className="text-gray-700">{cert}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Skills */}
+      <section id="skills" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Technical Proficiency</h2>
+          <p className="text-gray-600 mb-8">Legal technology platforms I use daily</p>
+          
+          <div className="grid md:grid-cols-5 gap-4 mb-12">
+            {skills.map((skill, index) => (
+              <div 
+                key={index}
+                className="bg-white border border-gray-200 rounded-lg p-4 text-center font-medium text-gray-700 hover:border-blue-600 hover:text-blue-600 transition-colors"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-white rounded-lg border border-gray-200 p-8">
+            <h3 className="text-xl font-bold text-gray-900 mb-6">Software Experience Evidence</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="border border-gray-200 rounded-lg p-4">
+                <div className="font-medium text-gray-900 mb-2">Clio Dashboard</div>
+                <div className="text-sm text-gray-600 mb-3">Case management, billing, calendar sync</div>
+                <div className="bg-gray-100 h-32 rounded flex items-center justify-center text-gray-500 text-sm">
+                  Screenshot: Clio Interface
+                </div>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-4">
+                <div className="font-medium text-gray-900 mb-2">DocuSign Workflow</div>
+                <div className="text-sm text-gray-600 mb-3">Document execution and tracking</div>
+                <div className="bg-gray-100 h-32 rounded flex items-center justify-center text-gray-500 text-sm">
+                  Screenshot: DocuSign
+                </div>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-4">
+                <div className="font-medium text-gray-900 mb-2">Client Onboarding</div>
+                <div className="text-sm text-gray-600 mb-3">Intake forms and documentation</div>
+                <div className="bg-gray-100 h-32 rounded flex items-center justify-center text-gray-500 text-sm">
+                  Screenshot: Intake System
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Practice Areas */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Practice Areas</h2>
+          <div className="grid md:grid-cols-5 gap-6">
+            {practiceAreas.map((area) => {
+              const Icon = area.icon;
+              return (
+                <div 
+                  key={area.id}
+                  className="bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 hover:border-blue-600 border border-transparent transition-all"
+                >
+                  <Icon className="mx-auto mb-3 text-blue-600" size={32} />
+                  <div className="font-medium text-gray-900">{area.name}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Work Samples */}
+      <section id="work" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Work Samples</h2>
+          <p className="text-gray-600 mb-8">Redacted examples of legal documents and templates</p>
+
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            <button
+              onClick={() => setActiveFilter('all')}
+              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                activeFilter === 'all'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+              }`}
+            >
+              All Areas
+            </button>
+            {practiceAreas.map((area) => (
+              <button
+                key={area.id}
+                onClick={() => setActiveFilter(area.id)}
+                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                  activeFilter === area.id
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                {area.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Work Sample Grid */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {filteredSamples.map((sample) => (
+              <div key={sample.id} className="bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition-colors">
+                <FileText className="text-blue-600 mb-4" size={32} />
+                <h3 className="font-bold text-gray-900 mb-2">{sample.title}</h3>
+                <p className="text-sm text-gray-600 mb-4">{sample.type}</p>
+                <button className="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-2">
+                  <Download size={16} />
+                  View Sample
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Hire Me */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Hire Me</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="text-blue-600" size={32} />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Licensed Attorney</h3>
+              <p className="text-gray-600">
+                Legal knowledge and judgment beyond administrative support
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Briefcase className="text-blue-600" size={32} />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Zero Training Required</h3>
+              <p className="text-gray-600">
+                Proficient in all major legal technology platforms
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Scale className="text-blue-600" size={32} />
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Multi-Practice Experience</h3>
+              <p className="text-gray-600">
+                Seamless support across five practice areas
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-blue-600 text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Work Together?</h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Let me support your legal practice with professional virtual assistance
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <a 
+              href="mailto:solapeblessing@gmail.com"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-blue-50 flex items-center gap-2"
+            >
+              <Mail size={20} />
+              solapeblessing@gmail.com
+            </a>
+            <a 
+              href="https://linkedin.com/in/blessing-agbede-35b2451a0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+          <p className="text-blue-100">
+            Phone: +234-706-497-2408 | Available for Various Time Zones
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-400 py-8">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <p>© 2025 Blessing Solape Agbede. Legal Assistant.</p>
+          <p className="text-sm mt-2">Nigerian Bar Association | GDPR Certified | Licensed Attorney</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
