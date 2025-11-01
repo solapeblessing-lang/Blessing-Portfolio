@@ -180,7 +180,7 @@
           <div class="border border-gray-200 rounded-lg p-4">
             <div class="font-medium text-gray-900 mb-2">Client Onboarding</div>
             <div class="text-sm text-gray-600 mb-3">Intake forms and documentation</div>
-            <img src="images/intake-screenshot.jpg" alt="Client Intake System" class="w-full h-32 object-cover rounded">
+            <img src="images/Client Intake Form.png" alt="Client Intake System" class="w-full h-32 object-cover rounded">
           </div>
         </div>
       </div>
